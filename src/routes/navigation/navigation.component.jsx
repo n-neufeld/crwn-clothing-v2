@@ -18,7 +18,7 @@ const Navigation = () => {
   
   return (
     <>
-      <div className="navigation">
+      <NavigationContainer>
         <Link className="logo-container" to="/">
           <CrownLogo className="logo" />
         </Link>
@@ -38,7 +38,7 @@ const Navigation = () => {
           <CartIcon />
         </div>
         {isCartOpen && <CartDropdown />}
-      </div>
+      </NavigationContainer>
       <Outlet />
     </>
   );
