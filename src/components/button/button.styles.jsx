@@ -24,17 +24,20 @@ justify-content: center;
   border: 1px solid black;
 }
 `
+export const GoogleSignInButton = styled(BaseButton)`
+background-color: #4285f4;
+color: white;
+
+&:hover {
+  background-color: #357ae8;
+  border: none;
+}
+`
+
 
 .button-container {
 
   &.google-sign-in {
-    background-color: #4285f4;
-    color: white;
-
-    &:hover {
-      background-color: #357ae8;
-      border: none;
-    }
   }
 
   &.inverted {
